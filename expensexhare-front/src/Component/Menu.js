@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Collapse, Nav, Navbar, NavbarBrand, NavItem} from 'reactstrap';
+import { Nav, Navbar, NavbarBrand, NavItem} from 'reactstrap';
 import { NavLink } from "react-router-dom";
 
 
@@ -9,7 +9,7 @@ class Menu extends Component {
         return (
             <Navbar color="light" light expand="md">
                 <NavbarBrand>Expenshare</NavbarBrand>
-                <Collapse isOpen={true} navbar></Collapse>
+
                 <Nav className="ml-auto" navbar>
 
 
@@ -17,7 +17,7 @@ class Menu extends Component {
                         <NavLink to={this.props.url} className="nav-link">Dashboard</NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink to={this.props.url + '/expense'} className="nav-link">Dépenses</NavLink>
+                        <NavLink to={this.props.url + '/expenses'} className="nav-link">Dépenses</NavLink>
                     </NavItem>
                     <NavItem>
                         <NavLink to={this.props.url + '/persons'} className="nav-link">Personnes</NavLink>

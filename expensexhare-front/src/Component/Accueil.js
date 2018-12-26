@@ -17,7 +17,7 @@ class Accueil extends Component {
 
     handleCreate(event) {
         event.preventDefault();
-        fetch('http://php/expenshare/public/sharegroup/', {
+        fetch('http://php/expenseshare/public/sharegroup/', {
             method: 'POST',
             body: JSON.stringify({ slug: this.state.slug })
         })
